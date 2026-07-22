@@ -40,7 +40,6 @@ function getRealIP(req) {
 
 initDB();
 
-// Настройка загрузки видео
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     const uploadDir = 'uploads';
@@ -60,12 +59,9 @@ const upload = multer({
 
 app.use('/uploads', express.static('uploads'));
 
-// Главная
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
-
-// Логин
 app.post('/login', (req, res) => {
   const { nick, password, deviceId } = req.body;
   if (!nick || !password || !deviceId) {
@@ -114,7 +110,6 @@ app.post('/login', (req, res) => {
   res.redirect(`/chat/${encodeURIComponent(cleanNick)}`);
 });
 
-// Чат
 app.get('/chat/:nick', (req, res) => {
   const nick = decodeURIComponent(req.params.nick);
   const page = parseInt(req.query.page) || 0;
@@ -285,8 +280,6 @@ app.get('/chat/:nick', (req, res) => {
     </html>
   `);
 });
-
-// Загрузка видео
 app.post('/upload-video', upload.single('video'), (req, res) => {
   const { nick } = req.body;
   if (!nick) return res.status(400).send('Нет ника');
@@ -308,7 +301,6 @@ app.post('/upload-video', upload.single('video'), (req, res) => {
   res.redirect(`/chat/${encodeURIComponent(nick)}`);
 });
 
-// Удаление
 app.get('/delete/:id', (req, res) => {
   const id = req.params.id;
   const db = readDB();
@@ -337,7 +329,6 @@ app.get('/hide/:id', (req, res) => {
   res.redirect('back');
 });
 
-// Отправка текста
 app.post('/send', (req, res) => {
   const { nick, msg } = req.body;
   if (!nick || !msg) return res.redirect('/');
@@ -374,7 +365,6 @@ app.post('/send', (req, res) => {
   res.redirect(`/chat/${encodeURIComponent(nick)}`);
 });
 
-// Профиль
 app.get('/profile/:nick', (req, res) => {
   const nick = decodeURIComponent(req.params.nick);
   const db = readDB();
@@ -465,7 +455,6 @@ app.get('/profile/:nick', (req, res) => {
   `);
 });
 
-// Профиль: статус
 app.post('/profile/:nick/status', (req, res) => {
   const nick = decodeURIComponent(req.params.nick);
   const db = readDB();
@@ -475,7 +464,6 @@ app.post('/profile/:nick/status', (req, res) => {
   res.redirect(`/profile/${encodeURIComponent(nick)}`);
 });
 
-// Профиль: рейтинг
 app.get('/profile/:nick/rate', (req, res) => {
   const nick = decodeURIComponent(req.params.nick);
   const action = req.query.action;
@@ -485,7 +473,31 @@ app.get('/profile/:nick/rate', (req, res) => {
   if (action === 'dislike') db.users[nick].rating = (db.users[nick].rating || 0) - 1;
   writeDB(db);
   res.redirect(`/profile/${encodeURIComponent(nick)}`);
+});
+
+app.post('/profile/:nick/bio', (req, res) => {
+  const nick = decodeURIComponent(req.params.nick);
+  const db = readDB();
+  if (!db.users[nick]) return res.send('Пользователь не найден');
+  db.users[nick].bio = req.body.bio.trim() || 'Пока ничего не рассказал о себе';
+  writeDB(db);
+  res.redirect(`/profile/${encodeURIComponent(nick)}`);
+});
+
+app.post('/profile/:nick/post', (req, res) => {
+  const nick = decodeURIComponent(req.params.nick);
+  const db = readDB();
+  if (!db.users[nick]) return res.send('Пользователь не найден');
+  const post = req.body.post.trim();
+  if (post) {
+    if (!db.users[nick].posts) db.users[nick].posts = [];
+    db.users[nick].posts.push(post);
+    writeDB(db);
+  }
+  res.redirect(`/profile/${encodeURIComponent(nick)}`);
+});
+
 app.listen(port, '0.0.0.0', () => {
   console.log('🚀 Сервер запущен на http://localhost:' + port);
 });
-});
+
