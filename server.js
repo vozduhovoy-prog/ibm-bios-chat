@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express');а
 const app = express();
 const port = 3000;
 const fs = require('fs');
@@ -176,7 +176,7 @@ app.get('/chat/:nick', (req, res) => {
   res.send(`
     <!DOCTYPE html>
     <html>
-    <head>
+    <head><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap&subset=cyrillic" rel="stylesheet">
       <meta charset="UTF-8">
       <title>Чат - ${nick}</title>
       <style>
@@ -184,7 +184,7 @@ app.get('/chat/:nick', (req, res) => {
         body {
           background: #000;
           color: #0f0;
-          font-family: 'Courier New', monospace;
+          font-family: 'Press Start 2P', 'Courier New', monospace;
           padding: 20px;
           min-height: 100vh;
         }

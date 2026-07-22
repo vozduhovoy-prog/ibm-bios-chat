@@ -1,17 +1,12 @@
 nohup: ignoring input
-t=2026-07-22T10:47:57+0000 lvl=info msg="no configuration paths supplied"
-t=2026-07-22T10:47:57+0000 lvl=warn msg="ngrok config file found at legacy location, move to XDG location" xdg_path=/data/data/com.termux/files/home/.config/ngrok/ngrok.yml legacy_path=/data/data/com.termux/files/home/.ngrok2/ngrok.yml err="stat /data/data/com.termux/files/home/.config/ngrok/ngrok.yml: no such file or directory"
-t=2026-07-22T10:47:57+0000 lvl=info msg="using configuration at default config path" path=/data/data/com.termux/files/home/.ngrok2/ngrok.yml
-t=2026-07-22T10:47:57+0000 lvl=info msg="open config file" path=/data/data/com.termux/files/home/.ngrok2/ngrok.yml err=nil
-t=2026-07-22T10:47:57+0000 lvl=info msg="FIPS 140 mode" enabled=false
-t=2026-07-22T10:47:57+0000 lvl=eror msg="unable to check interfaces" obj=tunnels.session err="route ip+net: netlinkrib: permission denied"
-t=2026-07-22T10:47:57+0000 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
-t=2026-07-22T10:47:58+0000 lvl=warn msg="failed to check for update" obj=updater err="Post \"https://update.ngrok-agent.com/check\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
-t=2026-07-22T10:47:58+0000 lvl=info msg="client session established" obj=tunnels.session
-t=2026-07-22T10:47:58+0000 lvl=info msg="tunnel session started" obj=tunnels.session
-t=2026-07-22T10:47:59+0000 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:3000 url=https://unlisted-grid-unmanned.ngrok-free.dev
-t=2026-07-22T10:55:13+0000 lvl=eror msg="heartbeat timeout, terminating session" obj=tunnels.session obj=csess id=5320ffc040d1 clientid=15bd04e00095e997043226af1767ad4f
-t=2026-07-22T10:55:13+0000 lvl=eror msg="session closed, starting reconnect loop" obj=tunnels.session obj=csess id=95b441f0f9ff err="session closed"
-t=2026-07-22T10:55:22+0000 lvl=info msg="client session established" obj=tunnels.session
-t=2026-07-22T10:55:22+0000 lvl=info msg="tunnel session started" obj=tunnels.session
-t=2026-07-22T11:16:50+0000 lvl=info msg="join connections" obj=join id=c22a54286596 l=127.0.0.1:3000 r=207.154.209.128:38200
+t=2026-07-22T11:49:03+0000 lvl=info msg="no configuration paths supplied"
+t=2026-07-22T11:49:03+0000 lvl=warn msg="ngrok config file found at legacy location, move to XDG location" xdg_path=/data/data/com.termux/files/home/.config/ngrok/ngrok.yml legacy_path=/data/data/com.termux/files/home/.ngrok2/ngrok.yml err="stat /data/data/com.termux/files/home/.config/ngrok/ngrok.yml: no such file or directory"
+t=2026-07-22T11:49:03+0000 lvl=info msg="using configuration at default config path" path=/data/data/com.termux/files/home/.ngrok2/ngrok.yml
+t=2026-07-22T11:49:03+0000 lvl=info msg="open config file" path=/data/data/com.termux/files/home/.ngrok2/ngrok.yml err=nil
+t=2026-07-22T11:49:03+0000 lvl=info msg="FIPS 140 mode" enabled=false
+t=2026-07-22T11:49:03+0000 lvl=eror msg="unable to check interfaces" obj=tunnels.session err="route ip+net: netlinkrib: permission denied"
+t=2026-07-22T11:49:03+0000 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2026-07-22T11:49:04+0000 lvl=warn msg="failed to check for update" obj=updater err="Post \"https://update.ngrok-agent.com/check\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+t=2026-07-22T11:49:04+0000 lvl=info msg="client session established" obj=tunnels.session
+t=2026-07-22T11:49:04+0000 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-07-22T11:49:04+0000 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:3000 url=https://unlisted-grid-unmanned.ngrok-free.dev
