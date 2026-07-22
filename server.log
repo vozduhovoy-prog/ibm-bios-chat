@@ -1,8 +1,14 @@
+/data/data/com.termux/files/home/messenger/server.js:487
+  res.redirect(`/profile/${encodeURICompo
 
-╔═══════════════════════════════════╗
-║   🖥️  IBM BIOS CHAT ЗАПУЩЕН     ║
-║   📡 http://localhost:3000     ║
-╚═══════════════════════════════════╝
+SyntaxError: Missing } in template expression
+    at wrapSafe (node:internal/modules/cjs/loader:1787:18)
+    at Module._compile (node:internal/modules/cjs/loader:1828:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1985:10)
+    at Module.load (node:internal/modules/cjs/loader:1577:32)
+    at Module._load (node:internal/modules/cjs/loader:1379:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
 
-💡 Нажмите Ctrl+C для остановки
-
+Node.js v24.17.0
