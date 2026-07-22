@@ -488,4 +488,4 @@ app.get('/profile/:nick/rate', (req, res) => {
 app.listen(port, '0.0.0.0', () => {
   console.log('🚀 Сервер запущен на http://localhost:' + port);
 });
-}
+});
