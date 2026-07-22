@@ -62,6 +62,7 @@ app.use('/uploads', express.static('uploads'));
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
+
 app.post('/login', (req, res) => {
   const { nick, password, deviceId } = req.body;
   if (!nick || !password || !deviceId) {
@@ -280,6 +281,7 @@ app.get('/chat/:nick', (req, res) => {
     </html>
   `);
 });
+
 app.post('/upload-video', upload.single('video'), (req, res) => {
   const { nick } = req.body;
   if (!nick) return res.status(400).send('Нет ника');
@@ -479,15 +481,6 @@ app.post('/profile/:nick/bio', (req, res) => {
   const nick = decodeURIComponent(req.params.nick);
   const db = readDB();
   if (!db.users[nick]) return res.send('Пользователь не найден');
-  db.users[nick].bio = req.body.bio.trim() || 'Пока ничего не рассказал о себе';
-  writeDB(db);
-  res.redirect(`/profile/${encodeURIComponent(nick)}`);
-});
-
-app.post('/profile/:nick/post', (req, res) => {
-  const nick = decodeURIComponent(req.params.nick);
-  const db = readDB();
-  if (!db.users[nick]) return res.send('Пользователь не найден');
   const post = req.body.post.trim();
   if (post) {
     if (!db.users[nick].posts) db.users[nick].posts = [];
@@ -500,4 +493,3 @@ app.post('/profile/:nick/post', (req, res) => {
 app.listen(port, '0.0.0.0', () => {
   console.log('🚀 Сервер запущен на http://localhost:' + port);
 });
-
