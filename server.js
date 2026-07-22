@@ -484,4 +484,4 @@ app.get('/profile/:nick/rate', (req, res) => {
   if (action === 'like') db.users[nick].rating = (db.users[nick].rating || 0) + 1;
   if (action === 'dislike') db.users[nick].rating = (db.users[nick].rating || 0) - 1;
   writeDB(db);
-  res.redirect(`/profile/${encodeURICompo
+  res.redirect(`/profile/${encodeURIComponent(nick)}`);
