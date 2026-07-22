@@ -1,0 +1,181 @@
+{
+  "users": {
+    "Neo": {
+      "ip": "127.0.0.1",
+      "joined": "2026-07-21T14:02:37.840Z"
+    },
+    "KIRA YOSHIKAGE": {
+      "ip": "127.0.0.1",
+      "joined": "2026-07-21T14:58:13.362Z"
+    },
+    "АДИДАС": {
+      "ip": "127.0.0.1",
+      "joined": "2026-07-21T14:13:13.789Z"
+    },
+    "Адидас": {
+      "ip": "127.0.0.1",
+      "joined": "2026-07-21T14:12:57.257Z"
+    },
+    "imposter": {
+      "ip": "127.0.0.1",
+      "joined": "2026-07-21T14:58:42.998Z"
+    }
+  },
+  "messages": [
+    {
+      "nick": "Neo",
+      "msg": "Ахахахах",
+      "time": "16:24:23"
+    },
+    {
+      "nick": "KIRA YOSHIKAGE",
+      "msg": "Ыыыы",
+      "time": "16:27:05"
+    },
+    {
+      "nick": "Neo",
+      "msg": "Да",
+      "time": "17:00:31"
+    },
+    {
+      "nick": "KIRA YOSHIKAGE",
+      "msg": "Ыыыы",
+      "time": "17:52:29"
+    },
+    {
+      "nick": "АДИДАС",
+      "msg": "⁸опа",
+      "time": "17:56:03"
+    },
+    {
+      "nick": "АДИДАС",
+      "msg": "Суета",
+      "time": "17:56:12"
+    },
+    {
+      "nick": "Neo",
+      "msg": "Да",
+      "time": "17:56:19"
+    },
+    {
+      "nick": "АДИДАС",
+      "msg": "Это замена макса?",
+      "time": "17:56:22"
+    },
+    {
+      "nick": "Neo",
+      "msg": "Кароче сайт вроде работает буду для нас всех его писать что бы мы общались если че",
+      "time": "17:56:50"
+    },
+    {
+      "nick": "Neo",
+      "msg": "Конечно",
+      "time": "17:58:19"
+    },
+    {
+      "nick": "АДИДАС",
+      "msg": "Вот вы смеётесь а потом это суета лучше телеги будеь",
+      "time": "17:59:33"
+    },
+    {
+      "nick": "KIRA YOSHIKAGE",
+      "msg": "Так хз хз",
+      "time": "17:59:56"
+    },
+    {
+      "nick": "KIRA YOSHIKAGE",
+      "msg": "Я буду проект свой расширять буду раздвигать буду ой то есть рамки своих возможностей",
+      "time": "18:00:44"
+    },
+    {
+      "nick": "KIRA YOSHIKAGE",
+      "msg": "Артем скинь рандомную ссылку",
+      "time": "18:01:34"
+    },
+    {
+      "nick": "KIRA YOSHIKAGE",
+      "msg": "Посмотришь ч е будет",
+      "time": "18:01:47"
+    },
+    {
+      "nick": "Neo",
+      "msg": "A",
+      "time": "18:47:35"
+    },
+    {
+      "nick": "Neo",
+      "msg": "Ы",
+      "time": "19:09:29"
+    },
+    {
+      "nick": "Neo",
+      "msg": "Жара",
+      "time": "19:09:39"
+    },
+    {
+      "nick": "Neo",
+      "msg": "Жопа",
+      "time": "19:09:53"
+    },
+    {
+      "nick": "imposter",
+      "msg": "pukan",
+      "time": "19:54:12"
+    },
+    {
+      "nick": "imposter",
+      "msg": "puk",
+      "time": "19:57:00"
+    },
+    {
+      "nick": "KIRA YOSHIKAGE",
+      "msg": "Ы",
+      "time": "19:58:18"
+    },
+    {
+      "nick": "KIRA YOSHIKAGE",
+      "msg": "Хз чето по типу чата создал",
+      "time": "19:58:40"
+    },
+    {
+      "nick": "imposter",
+      "msg": "a",
+      "time": "19:58:52"
+    },
+    {
+      "nick": "KIRA YOSHIKAGE",
+      "msg": "А и я Кира ершиксзади",
+      "time": "19:59:02"
+    },
+    {
+      "nick": "imposter",
+      "msg": "a kak kakatb",
+      "time": "19:59:02"
+    },
+    {
+      "nick": "KIRA YOSHIKAGE",
+      "msg": "Как то какать",
+      "time": "19:59:24"
+    },
+    {
+      "nick": "imposter",
+      "msg": "yokoso watashi no soul society",
+      "time": "19:59:32"
+    },
+    {
+      "nick": "imposter",
+      "msg": "hado no 90 kurohitsugi",
+      "time": "20:00:06"
+    },
+    {
+      "nick": "KIRA YOSHIKAGE",
+      "msg": "ひどいなあ……でも、心はここにある。",
+      "time": "20:01:59"
+    },
+    {
+      "nick": "KIRA YOSHIKAGE",
+      "msg": "Watashi no no wa kira youshikage",
+      "time": "20:02:55"
+    }
+  ]
+}
