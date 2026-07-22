@@ -1,9 +1,4 @@
 {
-  "dependencies": {
-    "express": "^5.2.1"
-  }
-}
-{
   "name": "ibm-bios-chat",
   "version": "1.0.0",
   "main": "server.js",
