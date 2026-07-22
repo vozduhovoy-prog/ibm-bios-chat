@@ -485,3 +485,6 @@ app.get('/profile/:nick/rate', (req, res) => {
   if (action === 'dislike') db.users[nick].rating = (db.users[nick].rating || 0) - 1;
   writeDB(db);
   res.redirect(`/profile/${encodeURIComponent(nick)}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log('🚀 Сервер запущен на http://localhost:' + port);
+});
